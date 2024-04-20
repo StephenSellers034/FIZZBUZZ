@@ -3,20 +3,24 @@ public class Program
     public void Main(string[] args)
     {
 
-        public string Fizz(int number)
+        
+    }  
+
+    public string Fizz(int number)
+    {
+        var answer = ""
+
         if(number % 3 == 0)
         {
-            return "fizz"
+            answer = "fizz";
         }
         if(number % 5 == 0)
         {
-            return "buzz"
+            answer += "buzz";
         }
-        if(number % 3 == 0 && number % 5 == 0)
-        {
-            return "fizzbuzz"
-        }
+        
+        return answer;
+    }
 
-    }  
 
 }    
